@@ -1,0 +1,8 @@
+# Replace the line below with the exact app-ads.txt entry from Yandex Advertising Network.
+# Example after publication:
+# https://<username>.github.io/volshebnye-istorii-site/app-ads.txt
+#
+# You can find the exact line in Yandex Advertising Network:
+# Settings -> General -> app-ads.txt
+#
+# Paste the real line below and remove these comments before verification.
