@@ -1,242 +1,99 @@
 <!doctype html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Волшебные истории — сайт разработчика</title>
-    <meta name="description" content="Официальный сайт приложения «Волшебные истории»: описание, стоимость цифровых сказок, Premium-подписка, документы и поддержка.">
+    <title>Magic Stories — stories for children</title>
+    <meta name="description" content="The official website of Magic Stories: interactive children's stories, pricing, Premium subscription, legal documents, and support.">
+    <link rel="alternate" hreflang="en" href="index.html">
+    <link rel="alternate" hreflang="ru" href="index-ru.html">
+    <link rel="alternate" hreflang="x-default" href="index.html">
     <style>
-        :root {
-            --bg: #fbf7ff;
-            --card: rgba(255, 255, 255, 0.9);
-            --text: #221b35;
-            --muted: #665f78;
-            --accent: #5b49d6;
-            --accent-soft: #efeaff;
-            --border: rgba(91, 73, 214, 0.14);
-            --shadow: 0 20px 50px rgba(72, 44, 150, 0.12);
-        }
-
-        * { box-sizing: border-box; }
-
-        body {
-            margin: 0;
-            font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
-            color: var(--text);
-            background:
-                radial-gradient(circle at top left, #f0e8ff 0, transparent 28%),
-                radial-gradient(circle at top right, #ffe9d9 0, transparent 24%),
-                linear-gradient(180deg, #fcf9ff 0%, #f8f4ff 100%);
-        }
-
-        a { color: var(--accent); }
-
-        .wrap {
-            max-width: 920px;
-            margin: 0 auto;
-            padding: 32px 20px 56px;
-        }
-
-        .hero {
-            background: linear-gradient(135deg, rgba(91, 73, 214, 0.08), rgba(255, 185, 120, 0.16));
-            border: 1px solid var(--border);
-            border-radius: 28px;
-            box-shadow: var(--shadow);
-            padding: 28px;
-        }
-
-        .badge {
-            display: inline-block;
-            padding: 8px 12px;
-            border-radius: 999px;
-            background: var(--accent-soft);
-            color: var(--accent);
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        h1 {
-            margin: 16px 0 12px;
-            font-size: clamp(34px, 5vw, 54px);
-            line-height: 1;
-        }
-
-        .lead {
-            margin: 0;
-            max-width: 620px;
-            color: var(--muted);
-            font-size: 18px;
-            line-height: 1.6;
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 18px;
-            margin-top: 22px;
-        }
-
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 18px;
-            margin-top: 22px;
-        }
-
-        .price {
-            margin: 4px 0 8px;
-            color: var(--text);
-            font-size: 30px;
-            font-weight: 750;
-        }
-
-        .fine-print {
-            margin-bottom: 0;
-            font-size: 14px;
-        }
-
-        .legal-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px 18px;
-            margin-top: 26px;
-            font-size: 14px;
-        }
-
-        .card {
-            background: var(--card);
-            border: 1px solid var(--border);
-            border-radius: 22px;
-            box-shadow: var(--shadow);
-            padding: 22px;
-            backdrop-filter: blur(12px);
-        }
-
-        h2 {
-            margin: 0 0 14px;
-            font-size: 24px;
-        }
-
-        p, li {
-            color: var(--muted);
-            line-height: 1.65;
-        }
-
-        ul {
-            margin: 0;
-            padding-left: 18px;
-        }
-
-        .links {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            margin-top: 18px;
-        }
-
-        .button {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            min-height: 46px;
-            padding: 0 18px;
-            border-radius: 14px;
-            background: var(--accent);
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .button.secondary {
-            background: #fff;
-            color: var(--accent);
-            border: 1px solid var(--border);
-        }
-
-        .button.store {
-            min-height: 52px;
-            padding: 0 22px;
-            background: linear-gradient(135deg, #1877f2, #6546e8);
-            box-shadow: 0 12px 24px rgba(63, 80, 220, 0.24);
-        }
-
-        .button.store:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 15px 28px rgba(63, 80, 220, 0.3);
-        }
-
-        footer {
-            margin-top: 24px;
-            color: var(--muted);
-            font-size: 14px;
-            text-align: center;
-        }
+        :root { --bg:#fbf7ff; --card:rgba(255,255,255,.9); --text:#221b35; --muted:#665f78; --accent:#5b49d6; --accent-soft:#efeaff; --border:rgba(91,73,214,.14); --shadow:0 20px 50px rgba(72,44,150,.12); }
+        * { box-sizing:border-box; }
+        body { margin:0; font-family:"Segoe UI",system-ui,-apple-system,sans-serif; color:var(--text); background:radial-gradient(circle at top left,#f0e8ff 0,transparent 28%),radial-gradient(circle at top right,#ffe9d9 0,transparent 24%),linear-gradient(180deg,#fcf9ff 0%,#f8f4ff 100%); }
+        a { color:var(--accent); }
+        .wrap { max-width:920px; margin:0 auto; padding:24px 20px 56px; }
+        .sitebar { display:flex; justify-content:flex-end; margin-bottom:12px; }
+        .language-switch { display:inline-flex; padding:3px; border:1px solid var(--border); border-radius:12px; background:rgba(255,255,255,.86); }
+        .language-switch a { min-width:44px; padding:7px 10px; border-radius:9px; color:var(--muted); text-align:center; text-decoration:none; font-size:14px; font-weight:700; }
+        .language-switch a[aria-current="page"] { color:#fff; background:var(--accent); }
+        .hero { background:linear-gradient(135deg,rgba(91,73,214,.08),rgba(255,185,120,.16)); border:1px solid var(--border); border-radius:28px; box-shadow:var(--shadow); padding:28px; }
+        .badge { display:inline-block; padding:8px 12px; border-radius:999px; background:var(--accent-soft); color:var(--accent); font-size:14px; font-weight:600; }
+        h1 { margin:16px 0 12px; font-size:clamp(34px,5vw,54px); line-height:1; }
+        .lead { margin:0; max-width:680px; color:var(--muted); font-size:18px; line-height:1.6; }
+        .grid,.services { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin-top:22px; }
+        .card { background:var(--card); border:1px solid var(--border); border-radius:22px; box-shadow:var(--shadow); padding:22px; backdrop-filter:blur(12px); }
+        h2 { margin:0 0 14px; font-size:24px; }
+        p,li { color:var(--muted); line-height:1.65; }
+        .price { margin:4px 0 8px; color:var(--text); font-size:30px; font-weight:750; }
+        .fine-print { margin-bottom:0; font-size:14px; }
+        .links { display:flex; flex-wrap:wrap; gap:12px; margin-top:18px; }
+        .button { display:inline-flex; align-items:center; justify-content:center; min-height:46px; padding:0 18px; border-radius:14px; background:var(--accent); color:#fff; text-decoration:none; font-weight:600; }
+        .button.secondary { background:#fff; color:var(--accent); border:1px solid var(--border); }
+        .button.store { min-height:52px; padding:0 22px; background:linear-gradient(135deg,#1877f2,#6546e8); box-shadow:0 12px 24px rgba(63,80,220,.24); }
+        .legal-links { display:flex; justify-content:center; flex-wrap:wrap; gap:10px 18px; margin-top:26px; font-size:14px; }
+        footer { margin-top:24px; color:var(--muted); font-size:14px; text-align:center; }
+        @media (max-width:620px) { .wrap{padding:12px 10px 40px}.hero{padding:22px 18px;border-radius:20px}.links .button{width:100%}.sitebar{margin-right:4px} }
     </style>
 </head>
 <body>
-    <div class="wrap">
-        <section class="hero">
-            <span class="badge">Разработчик приложения</span>
-            <h1>Волшебные истории - сказки для детей</h1>
-            <p class="lead">
-                Интерактивные детские сказки для чтения и прослушивания. Родители могут записать
-                собственную озвучку, а ребёнок — возвращаться к любимым историям в знакомом голосе.
-            </p>
-            <div class="links">
-                <a class="button store" href="https://www.rustore.ru/catalog/app/com.volshebnye.istorii" target="_blank" rel="noopener noreferrer">Скачать в RuStore</a>
-                <a class="button secondary" href="mailto:raccoon.app.labs@gmail.com">Написать в поддержку</a>
-                <a class="button secondary" href="privacy.html">Политика конфиденциальности</a>
-                <a class="button secondary" href="premium-terms.html">Публичная оферта</a>
-            </div>
-        </section>
-
-        <div class="services" aria-label="Стоимость цифрового доступа">
-            <section class="card">
-                <h2>Отдельная сказка</h2>
-                <p class="price">99 ₽</p>
-                <p>Доступ к выбранной цифровой сказке без ограничения срока и без регулярных списаний.</p>
-                <p class="fine-print">Покупка привязывается к электронной почте и восстанавливается на новом устройстве.</p>
-            </section>
-
-            <section class="card">
-                <h2>Premium</h2>
-                <p class="price">199 ₽ в месяц</p>
-                <p>Вся библиотека сказок без рекламы. Подписка продлевается автоматически каждый месяц.</p>
-                <p class="fine-print">Автопродление можно отключить в профиле. Доступ сохранится до конца оплаченного периода.</p>
-            </section>
-        </div>
-
-        <div class="grid">
-            <section class="card">
-                <h2>Контакты</h2>
-                <p><strong>Исполнитель:</strong> самозанятая Покаместова Анастасия Максимовна</p>
-                <p><strong>ИНН:</strong> 695205887530</p>
-                <p><strong>Email:</strong> <a href="mailto:raccoon.app.labs@gmail.com">raccoon.app.labs@gmail.com</a></p>
-                <p><strong>VK:</strong> <a href="https://vk.com/raccoon.app.labs">vk.com/raccoon.app.labs</a></p>
-            </section>
-
-            <section class="card">
-                <h2>Поддержка</h2>
-                <p>
-                    Если у вас есть вопрос по приложению, оплате, разблокировке книги или работе рекламы,
-                    напишите на почту поддержки. Мы стараемся отвечать как можно быстрее.
-                </p>
-                <p><a href="premium-manage.html">Открыть управление Premium</a></p>
-            </section>
-
-        </div>
-
-        <nav class="legal-links" aria-label="Правовая информация">
-            <a href="premium-terms.html">Публичная оферта</a>
-            <a href="subscription-terms.html">Условия подписки</a>
-            <a href="refund-policy.html">Отказ от услуги и возврат</a>
-            <a href="privacy.html">Политика конфиденциальности</a>
+<div class="wrap">
+    <div class="sitebar">
+        <nav class="language-switch" aria-label="Language">
+            <a href="index.html" lang="en" aria-current="page">EN</a>
+            <a href="index-ru.html" lang="ru">RU</a>
         </nav>
-
-        <footer>
-            © 2026 Волшебные истории · Самозанятая Покаместова Анастасия Максимовна · ИНН 695205887530
-        </footer>
     </div>
+    <section class="hero">
+        <span class="badge">Official app website</span>
+        <h1>Magic Stories for children</h1>
+        <p class="lead">Interactive children's stories to read and listen to. Parents can record their own narration, so a child can enjoy favorite stories in a familiar voice.</p>
+        <div class="links">
+            <a class="button store" href="https://www.rustore.ru/catalog/app/com.volshebnye.istorii" target="_blank" rel="noopener noreferrer">Download on RuStore</a>
+            <a class="button secondary" href="mailto:raccoon.app.labs@gmail.com">Contact support</a>
+            <a class="button secondary" href="privacy.html">Privacy Policy</a>
+            <a class="button secondary" href="premium-terms.html">Public Offer</a>
+        </div>
+    </section>
+
+    <div class="services" aria-label="Digital access pricing">
+        <section class="card">
+            <h2>One story</h2>
+            <p class="price">RUB 99</p>
+            <p>Permanent access to the selected digital story with no recurring charges.</p>
+            <p class="fine-print">The purchase is linked to your email address and can be restored on a new device.</p>
+        </section>
+        <section class="card">
+            <h2>Premium</h2>
+            <p class="price">RUB 199/month</p>
+            <p>Access to the complete story library without ads. The subscription renews automatically every month.</p>
+            <p class="fine-print">You can turn off auto-renewal in your profile. Access remains active until the end of the paid period.</p>
+        </section>
+    </div>
+
+    <div class="grid">
+        <section class="card">
+            <h2>Seller details</h2>
+            <p><strong>Provider:</strong> Anastasia Maksimovna Pokamestova, self-employed</p>
+            <p><strong>Russian Taxpayer ID (INN):</strong> 695205887530</p>
+            <p><strong>Email:</strong> <a href="mailto:raccoon.app.labs@gmail.com">raccoon.app.labs@gmail.com</a></p>
+            <p><strong>VK:</strong> <a href="https://vk.com/raccoon.app.labs">vk.com/raccoon.app.labs</a></p>
+        </section>
+        <section class="card">
+            <h2>Support</h2>
+            <p>If you have a question about the app, a payment, unlocking a story, or advertising, contact us by email. We aim to reply as soon as possible.</p>
+            <p><a href="premium-manage.html">Manage Premium</a></p>
+        </section>
+    </div>
+
+    <nav class="legal-links" aria-label="Legal information">
+        <a href="premium-terms.html">Public Offer</a>
+        <a href="subscription-terms.html">Subscription Terms</a>
+        <a href="refund-policy.html">Cancellation and Refunds</a>
+        <a href="privacy.html">Privacy Policy</a>
+    </nav>
+    <footer>© 2026 Magic Stories · Anastasia Maksimovna Pokamestova, self-employed · INN 695205887530</footer>
+</div>
 </body>
 </html>
