@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Волшебные истории — сайт разработчика</title>
-    <meta name="description" content="Сайт разработчика приложения «Волшебные истории». Контакты, поддержка, политика конфиденциальности.">
+    <meta name="description" content="Официальный сайт приложения «Волшебные истории»: описание, стоимость цифровых сказок, Premium-подписка, документы и поддержка.">
     <style>
         :root {
             --bg: #fbf7ff;
@@ -74,6 +74,34 @@
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 18px;
             margin-top: 22px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+            margin-top: 22px;
+        }
+
+        .price {
+            margin: 4px 0 8px;
+            color: var(--text);
+            font-size: 30px;
+            font-weight: 750;
+        }
+
+        .fine-print {
+            margin-bottom: 0;
+            font-size: 14px;
+        }
+
+        .legal-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+            margin-top: 26px;
+            font-size: 14px;
         }
 
         .card {
@@ -152,21 +180,40 @@
             <span class="badge">Разработчик приложения</span>
             <h1>Волшебные истории - сказки для детей</h1>
             <p class="lead">
-                Страница разработчика приложения для маленьких читателей. Здесь можно найти контакты
-                поддержки, ссылку на политику конфиденциальности.
+                Интерактивные детские сказки для чтения и прослушивания. Родители могут записать
+                собственную озвучку, а ребёнок — возвращаться к любимым историям в знакомом голосе.
             </p>
             <div class="links">
                 <a class="button store" href="https://www.rustore.ru/catalog/app/com.volshebnye.istorii" target="_blank" rel="noopener noreferrer">Скачать в RuStore</a>
                 <a class="button secondary" href="mailto:raccoon.app.labs@gmail.com">Написать в поддержку</a>
                 <a class="button secondary" href="privacy.html">Политика конфиденциальности</a>
+                <a class="button secondary" href="premium-terms.html">Публичная оферта</a>
             </div>
         </section>
+
+        <div class="services" aria-label="Стоимость цифрового доступа">
+            <section class="card">
+                <h2>Отдельная сказка</h2>
+                <p class="price">99 ₽</p>
+                <p>Доступ к выбранной цифровой сказке без ограничения срока и без регулярных списаний.</p>
+                <p class="fine-print">Покупка привязывается к электронной почте и восстанавливается на новом устройстве.</p>
+            </section>
+
+            <section class="card">
+                <h2>Premium</h2>
+                <p class="price">199 ₽ в месяц</p>
+                <p>Вся библиотека сказок без рекламы. Подписка продлевается автоматически каждый месяц.</p>
+                <p class="fine-print">Автопродление можно отключить в профиле. Доступ сохранится до конца оплаченного периода.</p>
+            </section>
+        </div>
 
         <div class="grid">
             <section class="card">
                 <h2>Контакты</h2>
-                <p><strong>Разработчик:</strong> Покаместова Анастасия</p>
+                <p><strong>Исполнитель:</strong> самозанятая Покаместова Анастасия</p>
+                <p><strong>ИНН:</strong> 695205887530</p>
                 <p><strong>Email:</strong> <a href="mailto:raccoon.app.labs@gmail.com">raccoon.app.labs@gmail.com</a></p>
+                <p><strong>Телефон:</strong> <a href="tel:+79030332319">+7 903 033-23-19</a></p>
                 <p><strong>VK:</strong> <a href="https://vk.com/raccoon.app.labs">vk.com/raccoon.app.labs</a></p>
             </section>
 
@@ -176,12 +223,20 @@
                     Если у вас есть вопрос по приложению, оплате, разблокировке книги или работе рекламы,
                     напишите на почту поддержки. Мы стараемся отвечать как можно быстрее.
                 </p>
+                <p><a href="premium-manage.html">Открыть управление Premium</a></p>
             </section>
 
         </div>
 
+        <nav class="legal-links" aria-label="Правовая информация">
+            <a href="premium-terms.html">Публичная оферта</a>
+            <a href="subscription-terms.html">Условия подписки</a>
+            <a href="refund-policy.html">Отказ от услуги и возврат</a>
+            <a href="privacy.html">Политика конфиденциальности</a>
+        </nav>
+
         <footer>
-            © 2026 Волшебные истории
+            © 2026 Волшебные истории · Самозанятая Покаместова Анастасия · ИНН 695205887530
         </footer>
     </div>
 </body>
