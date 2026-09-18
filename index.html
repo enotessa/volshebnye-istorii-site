@@ -126,6 +126,18 @@
             border: 1px solid var(--border);
         }
 
+        .button.store {
+            min-height: 52px;
+            padding: 0 22px;
+            background: linear-gradient(135deg, #1877f2, #6546e8);
+            box-shadow: 0 12px 24px rgba(63, 80, 220, 0.24);
+        }
+
+        .button.store:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 15px 28px rgba(63, 80, 220, 0.3);
+        }
+
         footer {
             margin-top: 24px;
             color: var(--muted);
@@ -144,7 +156,8 @@
                 поддержки, ссылку на политику конфиденциальности.
             </p>
             <div class="links">
-                <a class="button" href="mailto:raccoon.app.labs@gmail.com">Написать в поддержку</a>
+                <a class="button store" href="https://www.rustore.ru/catalog/app/com.volshebnye.istorii" target="_blank" rel="noopener noreferrer">Скачать в RuStore</a>
+                <a class="button secondary" href="mailto:raccoon.app.labs@gmail.com">Написать в поддержку</a>
                 <a class="button secondary" href="privacy.html">Политика конфиденциальности</a>
             </div>
         </section>
