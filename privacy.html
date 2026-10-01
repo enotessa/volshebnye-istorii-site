@@ -14,7 +14,7 @@
     <header class="topbar">
         <a class="brand" href="index.html">Magic Stories</a>
         <div class="topbar-actions">
-            <nav class="language-switch" aria-label="Language"><a href="privacy-en.html" lang="en" aria-current="page">EN</a><a href="privacy-ru.html" lang="ru">RU</a></nav>
+            <nav class="language-switch" aria-label="Language"><a href="privacy.html" lang="en" aria-current="page">EN</a><a href="privacy-ru.html" lang="ru">RU</a></nav>
             <a class="back" href="index.html">← Home</a>
         </div>
     </header>
@@ -25,7 +25,7 @@
         <p class="updated">Updated October 1, 2026</p>
 
         <div class="summary">
-            <p><strong>In brief:</strong> accounts, payments, and support are for adults. The child's name, detailed progress, favorites, and family voice recordings remain on the device. The server receives data needed for email sign-in, purchases, and subscriptions. The free version uses limited analytics and advertising configured for a child-directed audience.</p>
+            <p><strong>In brief:</strong> accounts, payments, and support are for adults. The child's name, detailed progress, favorites, and family voice recordings remain on the device. The server receives data needed for email sign-in, purchases, and subscriptions. Optional analytics and ad loading are off by default and are enabled only after a separate choice by an adult.</p>
         </div>
 
         <h2>1. Scope</h2>
@@ -56,8 +56,8 @@
             <li><strong>Payments, access delivery, subscriptions, refunds, and transaction history:</strong> entering into and performing the user agreement.</li>
             <li><strong>Receipts and mandatory records:</strong> compliance with tax and other legal obligations.</li>
             <li><strong>Prevention of duplicate requests, abuse, and fraud:</strong> the controller's lawful interests where the user's rights are not overridden.</li>
-            <li><strong>Technical analytics, diagnostics, and App improvement:</strong> service reliability and lawful interests; separate consent is requested where required by applicable law.</li>
-            <li><strong>Non-personalized or restricted advertising in the free version:</strong> operation of the free model selected by the user, with child-audience settings.</li>
+            <li><strong>Optional technical analytics and App improvement:</strong> the adult user's separate consent. Without that choice, the myTracker SDK is not initialized.</li>
+            <li><strong>Restricted advertising in the free version:</strong> the adult user's separate consent. Without it, the advertising SDK does not load ads.</li>
             <li><strong>Support:</strong> responding to the user's request, performing the agreement, and protecting the parties' rights.</li>
         </ul>
 
@@ -71,8 +71,8 @@
             <li><strong>Yandex Cloud</strong> — backend, database, digital-content hosting, and service email through Yandex Cloud Postbox;</li>
             <li><strong>Robokassa</strong> — one-time payments, refunds, and transaction status;</li>
             <li><strong>the Russian Federal Tax Service, My Tax, and Robokassa fiscalization</strong> — receipts where applicable;</li>
-            <li><strong>myTracker</strong> — restricted product analytics in the RuStore build, with Kid Mode enabled and without setting the user's email or the child's name as analytics IDs;</li>
-            <li><strong>Yandex Advertising Network</strong> — ad delivery and measurement in the free version; the App marks the audience as age-restricted, does not grant location consent, and removes the Android Advertising ID permission;</li>
+            <li><strong>myTracker</strong> — restricted product analytics in the RuStore build after adult consent, with Kid Mode enabled and without setting the user's email or the child's name as analytics IDs;</li>
+            <li><strong>Yandex Advertising Network</strong> — ad delivery and measurement in the free version after adult consent; the App marks the audience as age-restricted, does not grant location consent, and removes the Android Advertising ID permission;</li>
             <li><strong>RuStore Push</strong> — service and informational notifications in the RuStore build;</li>
             <li><strong>Google Play</strong> — distribution and payments if the Google Play version is published;</li>
             <li><strong>Yandex Mail and the user's mail provider</strong> — receipt and delivery of a support email sent at the user's choice; the relevant mail services process the message content;</li>
@@ -100,7 +100,8 @@
 
         <h2>10. User rights and account deletion</h2>
         <p>Subject to applicable law, users may request information, correction, restriction, or deletion of unlawfully processed or excessive data, withdraw consent where processing relies on consent, and complain to the competent authority or a court.</p>
-        <p>Email management, logout, and account deletion are available on the in-App account screen. Requests may also be sent to <a href="mailto:raccoon.labs.app@yandex.ru">raccoon.labs.app@yandex.ru</a>. Access to the linked email may be required to prevent deletion of another person's account.</p>
+        <p>Email management, logout, and account deletion are available on the in-App account screen. Detailed steps are published on the <a href="account-deletion.html">account and data deletion page</a>. Requests may also be sent to <a href="mailto:raccoon.labs.app@yandex.ru">raccoon.labs.app@yandex.ru</a>. Access to the linked email may be required to prevent deletion of another person's account.</p>
+        <p>Analytics and ad-loading choices can be changed at any time under Profile → Privacy. Disabling them stops new first-party analytics events and new ad loads; the analytics SDK stops starting completely on the next App launch.</p>
         <p>Withdrawal does not stop processing required by law or an existing agreement. Account deletion does not remove records that must be retained by law and may make earlier purchases impossible to restore.</p>
 
         <h2>11. Children's data</h2>
@@ -114,6 +115,7 @@
             <a href="premium-terms.html">Public Offer</a>
             <a href="subscription-terms.html">Subscription Terms</a>
             <a href="refund-policy.html">Cancellation and Refunds</a>
+            <a href="account-deletion.html">Account Deletion</a>
         </nav>
     </main>
 
